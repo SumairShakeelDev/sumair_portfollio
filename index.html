@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muhammad Sumair - Entry-Level Web & Computer Professional Portfolio">
+    <meta name="author" content="Muhammad Sumair">
+    <title>Muhammad Sumair | Entry-Level Web & Computer Professional</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.16"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">SUMAIR.DEV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero-section">
+        <div class="hero-bg-gradient"></div>
+        <div class="hero-bg-mesh"></div>
+        <!-- Floating blobs / shapes -->
+        <div class="hero-blobs" aria-hidden="true">
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+            <div class="hero-blob hero-blob-3"></div>
+            <div class="hero-blob hero-blob-4"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-7 hero-content-col" data-aos="fade-right">
+                    <div class="hero-text-wrap">
+                        <p class="hero-greeting hero-reveal">Hi, I'm</p>
+                        <h1 class="hero-name hero-reveal">Muhammad Sumair</h1>
+                        <p class="hero-typed-wrap hero-reveal"><span id="typedElement"></span><span class="typed-cursor">|</span></p>
+                        <p class="hero-subtitle hero-reveal">Web Designing | Graphic Designing | MS Office</p>
+                        <div class="hero-btns hero-reveal">
+                            <a href="M_Sumair_CV.zip" class="btn btn-cta btn-cta-primary btn-ripple" id="downloadCV">Download CV</a>
+                            <a href="#contact" class="btn btn-cta btn-cta-outline btn-ripple">Hire Me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center hero-img-col" data-aos="fade-left">
+                    <div class="hero-img-wrap hero-parallax-wrap">
+                        <img src="img1.jpeg" alt="Muhammad Sumair" class="hero-profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll to about"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <header class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">About <span>Me</span></h2>
+                <div class="title-underline"></div>
+            </header>
+            <div class="row align-items-center g-4">
+                <div class="col-lg-4 text-center" data-aos="fade-right">
+                    <div class="about-img-wrap">
+                        <img src="img2.jpeg" alt="Muhammad Sumair" class="about-profile-img">
+                    </div>
+                    <div class="about-counters row g-3 mt-4 justify-content-center">
+                        <div class="col-4">
+                            <div class="counter-card">
+                                <span class="counter" data-target="5">0</span>
+                                <small>Courses Completed</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="counter-card">
+                                <span class="counter" data-target="10">0</span>
+                                <small>Skills</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="counter-card">
+                                <span class="counter" data-target="2">0</span>
+                                <small>Experience</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <h3 class="about-heading">Entry-Level Web & Computer Professional</h3>
+                    <p class="about-text">Matric completed from <strong>M2 Grammar School (2021)</strong> and Intermediate completed from <strong>Premier College (2024)</strong>. Skilled in Web Designing & Graphic Designing with strong knowledge of Microsoft Word, Excel & PowerPoint.</p>
+                    <p class="about-text">I am passionate about building clean, responsive websites and creating visually appealing designs. Ready to contribute and grow in a professional environment.</p>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> Web Designing (Aptech)</li>
+                        <li><i class="fas fa-check"></i> Graphic Designing</li>
+                        <li><i class="fas fa-check"></i> MS Office (Word, Excel, PowerPoint)</li>
+                        <li><i class="fas fa-check"></i> HTML, CSS, JavaScript, Bootstrap</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== SKILLS SECTION ========== -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <header class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">My <span>Skills</span></h2>
+                <div class="title-underline"></div>
+            </header>
+
+            <!-- Web & Design
+            <div class="skills-category" data-aos="fade-up">
+                <h4 class="skills-cat-title"><i class="fas fa-code"></i> Web & Design</h4>
+                 Key skills circular 
+                <div class="row g-4 mb-4">
+                    <div class="col-6 col-md-3">
+                        <div class="skill-card skill-card-circular" data-skill-pct="92">
+                            <div class="skill-circle-wrap">
+                                <svg class="skill-circle" viewBox="0 0 100 100">
+                                    <circle class="skill-circle-bg" cx="50" cy="50" r="45"/>
+                                    <circle class="skill-circle-fill" cx="50" cy="50" r="45" data-circle-pct="92"/>
+                                </svg>
+                                <span class="skill-circle-pct">0</span>
+                            </div>
+                            <h5>HTML</h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="skill-card skill-card-circular" data-skill-pct="88">
+                            <div class="skill-circle-wrap">
+                                <svg class="skill-circle" viewBox="0 0 100 100">
+                                    <circle class="skill-circle-bg" cx="50" cy="50" r="45"/>
+                                    <circle class="skill-circle-fill" cx="50" cy="50" r="45" data-circle-pct="88"/>
+                                </svg>
+                                <span class="skill-circle-pct">0</span>
+                            </div>
+                            <h5>CSS</h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="skill-card skill-card-circular" data-skill-pct="85">
+                            <div class="skill-circle-wrap">
+                                <svg class="skill-circle" viewBox="0 0 100 100">
+                                    <circle class="skill-circle-bg" cx="50" cy="50" r="45"/>
+                                    <circle class="skill-circle-fill" cx="50" cy="50" r="45" data-circle-pct="85"/>
+                                </svg>
+                                <span class="skill-circle-pct">0</span>
+                            </div>
+                            <h5>Web Design</h5>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="skill-card skill-card-circular" data-skill-pct="82">
+                            <div class="skill-circle-wrap">
+                                <svg class="skill-circle" viewBox="0 0 100 100">
+                                    <circle class="skill-circle-bg" cx="50" cy="50" r="45"/>
+                                    <circle class="skill-circle-fill" cx="50" cy="50" r="45" data-circle-pct="82"/>
+                                </svg>
+                                <span class="skill-circle-pct">0</span>
+                            </div>
+                            <h5>Graphic</h5>
+                        </div>
+                    </div>
+                </div> -->
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h5>HTML</h5>
+                            <div class="skill-progress"><div class="skill-bar" data-skill="92"></div></div>
+                            <span class="skill-pct">92%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <h5>CSS</h5>
+                            <div class="skill-progress"><div class="skill-bar" data-skill="88"></div></div>
+                            <span class="skill-pct">88%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                            <h5>Web Designing</h5>
+                            <div class="skill-progress"><div class="skill-bar" data-skill="85"></div></div>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                            <h5>Graphic Designing</h5>
+                            <div class="skill-progress"><div class="skill-bar" data-skill="82"></div></div>
+                            <span class="skill-pct">82%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Computer Skills -->
+            <div class="skills-category" data-aos="fade-up">
+                <h4 class="skills-cat-title"><i class="fas fa-desktop"></i> Computer Skills</h4>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-file-word"></i></div>
+                            <h5>Microsoft Word</h5>
+                            <div class="skill-progress"><div class="skill-bar" data-skill="90"></div></div>
+                            <span class="skill-pct">90%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-file-excel"></i></div>
+                            <h5>Microsoft Excel</h5>
+                            <div class="skill-progress"><div class="skill-bar" data-skill="85"></div></div>
+                            <span class="skill-pct">85%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-file-powerpoint"></i></div>
+                            <h5>Microsoft PowerPoint</h5>
+                            <div class="skill-progress"><div class="skill-bar" data-skill="88"></div></div>
+                            <span class="skill-pct">88%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tools -->
+            <div class="skills-category" data-aos="fade-up">
+                <h4 class="skills-cat-title"><i class="fas fa-tools"></i> Tools</h4>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-palette"></i></div>
+                            <h5>Canva</h5>
+                            <div class="skill-progress"><div class="skill-bar" data-skill="80"></div></div>
+                            <span class="skill-pct">80%</span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill-card">
+                            <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                            <h5>Basic Design Tools</h5>
+                            <div class="skill-progress"><div class="skill-bar" data-skill="78"></div></div>
+                            <span class="skill-pct">78%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PROJECTS SECTION ========== -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <header class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">My <span>Projects</span></h2>
+                <div class="title-underline"></div>
+            </header>
+            <div class="project-filters">
+                <button type="button" class="project-filter-btn active" data-filter="all">All</button>
+                <button type="button" class="project-filter-btn" data-filter="frontend">Frontend</button>
+                <button type="button" class="project-filter-btn" data-filter="design">Design</button>
+            </div>
+            <div class="row g-4 project-grid">
+                <div class="col-lg-6 project-item" data-aos="fade-up" data-aos-delay="100" data-category="frontend">
+                    <div class="project-card project-card-3d">
+                        <div class="project-card-header">
+                            <i class="fas fa-laptop-code"></i>
+                            <div class="project-badges">
+                                <span>HTML</span><span>CSS</span><span>JS</span><span>Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <h4>Personal Portfolio Website</h4>
+                            <p>Responsive portfolio showcasing skills, education, and contact with modern UI and smooth animations.</p>
+                        </div>
+                        <div class="project-card-overlay">
+                            <a href="#" class="btn btn-sm btn-demo">Demo</a>
+                            <a href="#" class="btn btn-sm btn-github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-item" data-aos="fade-up" data-aos-delay="200" data-category="frontend">
+                    <div class="project-card project-card-3d">
+                        <div class="project-card-header">
+                            <i class="fas fa-briefcase"></i>
+                            <div class="project-badges">
+                                <span>HTML</span><span>CSS</span><span>Bootstrap</span>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <h4>Business Website Design</h4>
+                            <p>Professional business website with services, about section, and contact form for corporate clients.</p>
+                        </div>
+                        <div class="project-card-overlay">
+                            <a href="#" class="btn btn-sm btn-demo">Demo</a>
+                            <a href="#" class="btn btn-sm btn-github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-item" data-aos="fade-up" data-aos-delay="300" data-category="design">
+                    <div class="project-card project-card-3d">
+                        <div class="project-card-header">
+                            <i class="fas fa-image"></i>
+                            <div class="project-badges">
+                                <span>Canva</span><span>Design</span>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <h4>Graphic Design Samples</h4>
+                            <p>Collection of logos, social media graphics, and marketing materials created with design tools.</p>
+                        </div>
+                        <div class="project-card-overlay">
+                            <a href="#" class="btn btn-sm btn-demo">Demo</a>
+                            <a href="#" class="btn btn-sm btn-github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 project-item" data-aos="fade-up" data-aos-delay="400" data-category="frontend">
+                    <div class="project-card project-card-3d">
+                        <div class="project-card-header">
+                            <i class="fas fa-file-code"></i>
+                            <div class="project-badges">
+                                <span>HTML</span><span>CSS</span>
+                            </div>
+                        </div>
+                        <div class="project-card-body">
+                            <h4>Simple Web Pages</h4>
+                            <p>Clean, semantic HTML and CSS pages including landing sections and contact forms.</p>
+                        </div>
+                        <div class="project-card-overlay">
+                            <a href="#" class="btn btn-sm btn-demo">Demo</a>
+                            <a href="#" class="btn btn-sm btn-github">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERIENCE SECTION ========== -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <header class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">My <span>Experience</span></h2>
+                <div class="title-underline"></div>
+            </header>
+            <div class="experience-timeline">
+                <div class="exp-timeline-line" id="expTimelineLine"></div>
+                <div class="exp-item" data-aos="fade-up">
+                    <div class="exp-marker"></div>
+                    <div class="exp-content">
+                        <span class="exp-role">Computer & Web Trainee</span>
+                        <h4>Aptech Computer Education</h4>
+                        <ul>
+                            <li>Web designing practice</li>
+                            <li>Graphic design tasks</li>
+                            <li>Office work & documentation</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EDUCATION SECTION ========== -->
+    <section id="education" class="section education-section">
+        <div class="container">
+            <header class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">My <span>Education</span></h2>
+                <div class="title-underline"></div>
+            </header>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <span class="edu-year">2021</span>
+                        <h4>Matric</h4>
+                        <h5>M2 Grammar School</h5>
+                        <p>Completed secondary education with strong foundation in core subjects.</p>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="edu-card">
+                        <div class="edu-icon"><i class="fas fa-university"></i></div>
+                        <span class="edu-year">2024</span>
+                        <h4>Intermediate</h4>
+                        <h5>Premier College</h5>
+                        <p>Graduated with focus on continuing technical and academic growth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <header class="section-header text-center" data-aos="fade-up">
+                <h2 class="section-title">Get In <span>Touch</span></h2>
+                <div class="title-underline"></div>
+            </header>
+            <div class="row">
+                <div class="col-lg-4 mb-4" data-aos="fade-right">
+                    <div class="contact-info-card">
+                        <div class="contact-info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h5>Phone</h5>
+                                <p>0318-2803402</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h5>Location</h5>
+                                <p>Karachi, Pakistan</p>
+                                <small>Flat # 2/2, Dadda House, Nazimabad No. 1</small>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <form id="contactForm" class="contact-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating-wrap">
+                                    <input type="text" class="form-control" id="formName" placeholder=" " required>
+                                    <label for="formName">Your Name</label>
+                                </div>
+                                <span class="error-msg" id="nameError"></span>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating-wrap">
+                                    <input type="email" class="form-control" id="formEmail" placeholder=" " required>
+                                    <label for="formEmail">Your Email</label>
+                                </div>
+                                <span class="error-msg" id="emailError"></span>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating-wrap form-floating-wrap-textarea">
+                                    <textarea class="form-control" id="formMessage" rows="5" placeholder=" " required></textarea>
+                                    <label for="formMessage">Your Message</label>
+                                </div>
+                                <span class="error-msg" id="messageError"></span>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-submit" id="contactSubmitBtn">
+                                    <span class="btn-submit-text">Send Message</span>
+                                    <span class="btn-submit-loader"><i class="fas fa-spinner fa-spin"></i></span>
+                                    <span class="btn-submit-success"><i class="fas fa-check"></i></span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <p class="footer-copy">&copy; 2026 Muhammad Sumair</p>
+                <div class="footer-social">
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                </div>
+                <p class="footer-built">Built with <i class="fas fa-heart"></i> using HTML, CSS & JavaScript</p>
+            </div>
+        </div>
+        <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <!-- Toast for form success -->
+    <div id="toast" class="toast-msg" role="alert" aria-live="polite">
+        <i class="fas fa-check-circle"></i>
+        <span>Message sent successfully!</span>
+    </div>
+</body>
+</html>
